@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    background-color: blue;
+}
+
+.hedeer{
+    padding: 22px 80px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    justify-content: space-between;
+}
+
+.image-logo {
+    width: 150px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+    }
+
+.box{
+    flex-direction: row-reverse;
+    border: none;
+    cursor: pointer;
+}
