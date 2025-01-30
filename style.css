@@ -1,14 +1,30 @@
 body{
     margin: 0;
-    background-color: blue;
 }
 
-.hedeer{
+.homePage {
+    background-color: #1262AE;
+    width: 100%;
+    height: auto;
+}
+
+header{
     padding: 22px 80px;
     display: flex;
     align-items: center;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255);
     justify-content: space-between;
+}
+
+.homeButten{
+    background-color: rgb(255, 255, 255);
+    flex-direction: row-reverse;
+    border: none;
+    cursor: pointer;
+}
+
+.homeButten:focus-visible{
+    outline-color: #1262AF;
 }
 
 .image-logo {
@@ -19,8 +35,29 @@ body{
     cursor: pointer;
     }
 
-.box{
+.buttonHeader {
+    background-color: rgb(255, 255, 255);
     flex-direction: row-reverse;
     border: none;
     cursor: pointer;
+    color: #434343;
+    transition: all 0.2s linear;
+}
+
+.buttonHeader:hover{
+    background-color: rgb(255, 255, 255);
+    color: #8E8E94;
+}
+
+.buttonHeader:active {
+    color: #c9c6c6;
+}
+
+.buttonHeader:focus-visible{
+    outline-color: #1262AF;
+}
+.disabled {
+    opacity: 100;
+    color: #1262AF;
+    cursor: not-allowed;
 }
