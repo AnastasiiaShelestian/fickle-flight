@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+}
+
+.homePage {
+  background-color: #1262ae;
+  width: 100%;
+  height: auto;
+}
+
+header {
+  padding: 22px 80px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+}
+
+.homeButtonContainer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeButton {
+  background-color: transparent;
+  flex-direction: row-reverse;
+  border: none;
+  cursor: pointer;
+}
+
+.homeButton:focus-visible {
+  outline-color: #1262af;
+}
+
+.image-logo {
+  width: 150px;
+  background-size: cover;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.burgerButton {
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.burgerButton img {
+  width: 35px;
+}
+
+.buttonLinkHeader {
+  background-color: transparent;
+  flex-direction: row-reverse;
+  border: none;
+  cursor: pointer;
+  color: #434343;
+  transition: all 0.2s linear;
+}
+
+.buttonLinkHeader:hover {
+  background-color: transparent;
+  color: #8e8e94;
+}
+
+.buttonLinkHeader:active {
+  color: #c9c6c6;
+}
+
+.buttonLinkHeader:focus-visible {
+  outline-color: #1262af;
+}
+.disabled {
+  opacity: 100;
+  color: #1262af;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+  }
+  .buttonLinkHeader {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 22px;
+    position: relative;
+  }
+
+  .homeButtonContainer {
+    width: 100%;
+  }
+
+  .headerLinkButtonsContainer {
+    position: absolute;
+    bottom: -135px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  .burgerButton {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    right: 0;
+  }
+}
