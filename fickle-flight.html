@@ -1,27 +1,40 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>fickle-flight</title> 
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
-        <header>
-            <div>
-                <button class="homeButten">
-                    <img src="Fickleflight Logo.svg"  class="image-logo">
-                </button>
-            </div>
-            <div>
-                <button class="buttonHeader disabled">Explore</button>
-                <button class="buttonHeader">Search</button>
-                <button class="buttonHeader">Hotels</button>
-                <button class="buttonHeader">Offers</button>
-            </div>   
-        </header>
-        <div>
-            <img src="Banner  Background.png" class="homePage">
-        </div>
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <title>fickle-flight</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <div class="homeButtonContainer">
+        <button class="homeButton">
+          <img src="Fickleflight Logo.svg" class="image-logo" />
+        </button>
+        <button class="burgerButton" onclick="handleClick();">
+          <img src="burgerButton.svg" />
+        </button>
+      </div>
+      <div class="headerLinkButtonsContainer" id="menu">
+        <button class="buttonLinkHeader disabled">Explore</button>
+        <button class="buttonLinkHeader">Search</button>
+        <button class="buttonLinkHeader">Hotels</button>
+        <button class="buttonLinkHeader">Offers</button>
+      </div>
+    </header>
+    <section>
+      <img src="Banner  Background.png" class="homePage" />
+    </section>
+  </body>
+  <script>
+    function handleClick() {
+      const menuElement = document.getElementById("menu");
+      if (menuElement.style.display == "none") {
+        menuElement.style.display = "flex";
+      } else {
+        menuElement.style.display = "none";
+      }
+    }
+  </script>
 </html>
-
